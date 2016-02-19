@@ -15,12 +15,22 @@ Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
 
   // api.use('ecmascript');
-  api.use(["templating", "ui", "blaze", "less@1.0.0||2.0.0", "reactive-var"]);
-  api.use("isobuild:cordova@5.2.0");
+  api.use(["templating", "ui", "blaze", "less", "reactive-var"]);
+  // api.use("isobuild:cordova@5.2.0");
 
-  api.addFiles('witai.html');
-  api.addFiles('witai.less', ['web.browser']);
-  api.addFiles('witai-browser.js', ['web.browser']);
+  // Include official Wit.ai browser integration
+  api.addFiles('browser/witai-browser-client/witai.min.css', ['web.browser']);
+  api.addfiles('browser/witai-browser-client/witai.min.js', ['web.browser']);
+  api.addFiles('browser/witai-browser-client/fonts/microphone.eot', ['web.browser'], {isAsset:true});
+  api.addFiles('browser/witai-browser-client/fonts/microphone.svg', ['web.browser'], {isAsset:true});
+  api.addFiles('browser/witai-browser-client/fonts/microphone.ttf', ['web.browser'], {isAsset:true});
+  api.addFiles('browser/witai-browser-client/fonts/microphone.woff', ['web.browser'], {isAsset:true});
+  // Include Meteor interface for Wit.ai's browser integration
+  api.addFiles('browser/witai-interface.html', ['web.browser']);
+  api.addFiles('browser/witai-interface.js');
+
+  // api.addFiles('witai.less', ['web.browser']);
+  // api.addFiles('witai-browser.js', ['web.browser']);
   // api.addFiles('witai-cordova.js', ['web.cordova']);
 });
 

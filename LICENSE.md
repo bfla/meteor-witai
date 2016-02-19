@@ -1,3 +1,7 @@
+Note: Code inside of the following folders is borrowed from other repositories,
+which have their own licensing terms:
+- `/browser/witai-browser-client/LICENSE.md`
+
 The MIT License (MIT)
 
 Copyright (c) 2016 Brian
