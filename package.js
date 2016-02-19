@@ -10,6 +10,11 @@ Package.describe({
   documentation: 'README.md'
 });
 
+// TODO - create Cordova package
+// Cordova.depends({
+//   "cordova-plugin-camera": "2.0.0"
+// });
+
 Package.onUse(function(api) {
   // api.export('WitaiClient');
   api.versionsFrom('1.2.1');
