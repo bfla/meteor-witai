@@ -1,6 +1,6 @@
 // This code is mostly copied from here, with minor alterations: 
 // https://wit.ai/docs/web/0.7.0/quickstart
-Template.witaiInterface.rendered = funcion() {
+Template.witaiInterface.rendered = function() {
   var mic = new Wit.Microphone(document.getElementById("witai-interface"));
 
   var info = function (msg) {
