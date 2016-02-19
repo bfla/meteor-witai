@@ -15,12 +15,12 @@ Package.describe({
 //   "cordova-plugin-camera": "2.0.0"
 // });
 
-Package.onUse(function(api) {
+Package.onUse( function(api) {
   // api.export('WitaiClient');
   api.versionsFrom('1.2.1');
 
   // api.use('ecmascript');
-  api.use(["templating", "ui", "blaze", "less", "reactive-var"]);
+  api.use(["templating", "ui", "blaze", "reactive-var"]);
   // api.use("isobuild:cordova@5.2.0");
 
   // Include official Wit.ai browser integration
