@@ -11,9 +11,17 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
+  api.export('WitaiClient');
   api.versionsFrom('1.2.1');
-  api.use('ecmascript');
-  api.addFiles('witai.js');
+
+  // api.use('ecmascript');
+  api.use(["templating", "ui", "blaze", "less@1.0.0||2.0.0", "reactive-var"]);
+  api.use("isobuild:cordova@5.2.0");
+
+  api.addFiles('witai.html');
+  api.addFiles('witai.less', ['web.browser']);
+  api.addFiles('witai-browser.js', ['web.browser']);
+  // api.addFiles('witai-cordova.js', ['web.cordova']);
 });
 
 Package.onTest(function(api) {
