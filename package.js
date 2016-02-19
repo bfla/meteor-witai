@@ -27,7 +27,7 @@ Package.onUse(function(api) {
   api.addFiles('browser/witai-browser-client/fonts/microphone.woff', ['web.browser'], {isAsset:true});
   // Include Meteor interface for Wit.ai's browser integration
   api.addFiles('browser/witai-interface.html', ['web.browser']);
-  api.addFiles('browser/witai-interface.js');
+  api.addFiles('browser/witai-interface.js', ['web.browser']);
 
   // api.addFiles('witai.less', ['web.browser']);
   // api.addFiles('witai-browser.js', ['web.browser']);
