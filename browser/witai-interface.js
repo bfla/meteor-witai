@@ -2,7 +2,7 @@
 // https://wit.ai/docs/web/0.7.0/quickstart
 Template.witaiInterface.rendered = function() {
 
-  var mic = new Wit.Microphone(document.getElementById("witai-interface"));
+  var mic = new Wit.Microphone(document.getElementById("microphone"));
 
   var info = function (msg) {
     document.getElementById("info").innerHTML = msg;
